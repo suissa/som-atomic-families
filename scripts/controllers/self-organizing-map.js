@@ -45,6 +45,14 @@ var atoms = [
   {name: 'Ru', dist: '5s14d7'},
   {name: 'Os', dist: '6s24f145d6'},
   {name: 'Hs', dist: '7s25f146d6'},
+  {name: 'Co', dist: '7s25f146d6'},
+  {name: 'Rh', dist: '7s25f146d6'},
+  {name: 'Ir', dist: '7s25f146d6'},
+  {name: 'Mt', dist: '7s25f146d6'},
+  {name: 'Ni', dist: '7s25f146d6'},
+  {name: 'Pd', dist: '7s25f146d6'},
+  {name: 'Pt', dist: '7s25f146d6'},
+  {name: 'Ds', dist: '7s25f146d6'},
   ]
 
 
