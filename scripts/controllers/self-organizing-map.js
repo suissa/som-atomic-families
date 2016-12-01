@@ -244,26 +244,26 @@ angular.module('gitHubApp')
     });
     }
 
-    $scope.map[makeInputs(1, inputsSize).join('')] = ["família 1"];  
-    $scope.map[makeInputs(2, inputsSize).join('')] = ["família 2"];
-    $scope.map[makeInputs(3, inputsSize).join('')] = ["família 3"];
-    $scope.map[makeInputs(4, inputsSize).join('')] = ["família 4"];
-    $scope.map[makeInputs(5, inputsSize).join('')] = ["família 5"];
-    $scope.map[makeInputs(6, inputsSize).join('')] = ["família 6"];
-    $scope.map[makeInputs(7, inputsSize).join('')] = ["família 7"];
-    $scope.map[makeInputs(8, inputsSize).join('')] = ["família 8"];
-    $scope.map[makeInputs(9, inputsSize).join('')] = ["família 9"];
-    $scope.map[makeInputs(10, inputsSize).join('')] = ["família 10"];
-    $scope.map[makeInputs(11, inputsSize).join('')] = ["família 11"];
-    $scope.map[makeInputs(12, inputsSize).join('')] = ["família 12"];
-    $scope.map[makeInputs(13, inputsSize).join('')] = ["família 13"];
-    $scope.map[makeInputs(14, inputsSize).join('')] = ["família 14"];
-    $scope.map[makeInputs(15, inputsSize).join('')] = ["família 15"];
-    $scope.map[makeInputs(16, inputsSize).join('')] = ["família 16"];
-    $scope.map[makeInputs(17, inputsSize).join('')] = ["família 17"];
-    $scope.map[makeInputs(18, inputsSize).join('')] = ["família 18"];
+    $scope.map[makeInputs(1, inputsSize).join('')] = ["family 1"];  
+    $scope.map[makeInputs(2, inputsSize).join('')] = ["family 2"];
+    $scope.map[makeInputs(3, inputsSize).join('')] = ["family 3"];
+    $scope.map[makeInputs(4, inputsSize).join('')] = ["family 4"];
+    $scope.map[makeInputs(5, inputsSize).join('')] = ["family 5"];
+    $scope.map[makeInputs(6, inputsSize).join('')] = ["family 6"];
+    $scope.map[makeInputs(7, inputsSize).join('')] = ["family 7"];
+    $scope.map[makeInputs(8, inputsSize).join('')] = ["family 8"];
+    $scope.map[makeInputs(9, inputsSize).join('')] = ["family 9"];
+    $scope.map[makeInputs(10, inputsSize).join('')] = ["family 10"];
+    $scope.map[makeInputs(11, inputsSize).join('')] = ["family 11"];
+    $scope.map[makeInputs(12, inputsSize).join('')] = ["family 12"];
+    $scope.map[makeInputs(13, inputsSize).join('')] = ["family 13"];
+    $scope.map[makeInputs(14, inputsSize).join('')] = ["family 14"];
+    $scope.map[makeInputs(15, inputsSize).join('')] = ["family 15"];
+    $scope.map[makeInputs(16, inputsSize).join('')] = ["family 16"];
+    $scope.map[makeInputs(17, inputsSize).join('')] = ["family 17"];
+    $scope.map[makeInputs(18, inputsSize).join('')] = ["family 18"];
 
-    $scope.map[makeInputs(20, inputsSize).join('')] = ["outros"];
+    $scope.map[makeInputs(20, inputsSize).join('')] = ["other"];
 
     var learn = [
       makeInputs(20, inputsSize), // outros
