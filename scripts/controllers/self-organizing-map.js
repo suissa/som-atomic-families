@@ -8,6 +8,22 @@
  * Controller of the gitHubApp
  */
 
+var atoms = [
+  {name: 'Li', dist: '2s1'},
+  {name: 'Na', dist: '3s1'},
+  {name: 'K', dist: '4s1'},
+  {name: 'Rb', dist: '5s1'},
+  {name: 'Cs', dist: '6s1'},
+  {name: 'Fr', dist: '7s1'},
+  {name: 'Be', dist: '7s2'},
+  {name: 'Mg', dist: '7s2'},
+  {name: 'Ca', dist: '7s2'},
+  {name: 'Sr', dist: '7s2'},
+  {name: 'Ba', dist: '7s2'},
+  {name: 'Ra', dist: '7s2'},
+]
+
+
 var family1 = /([1-9])?[1-9]s1$/
 var family2 = /([1-9])?[1-9]s2$/
 var family3 = /([1-9])?[1-9]d1$/
@@ -111,8 +127,13 @@ angular.module('gitHubApp')
     var feed = function(word){
       console.log('word', word);
 
-      // var input = ;
       var input = makeInputs(20, inputsSize);
+      // var input = ;
+
+      var atom = atoms.filter((atom) => atom.name.toLowerCase() === word)
+
+      console.log('atom', atom);
+      if (atom.length) word = atom[0].dist
 
       var filtered = families.filter((f) => f.regex.test(word))
 
