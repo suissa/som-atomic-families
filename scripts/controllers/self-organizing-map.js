@@ -60,6 +60,7 @@ var family9 = /![1-4]s1[1-9]d7$|4s2[1-9]d7$|f14[1-9]d7$|5s1[1-9]d8$/
 var family10 = /![1-4]s1[1-9]d8$|4s2[1-9]d8$|f14[1-9]d8$|5s1[1-9]d9$/
 var family11 = /[1-9]s1+([1-9]f14)?[1-9]d10$|7s25f146d9$/
 var family12 = /[1-9]s2+([1-9]f14)?[1-9]d10$/
+var family13 = /[1-9]s2+([1-9]d10)?[1-9]p1$/
 
 const makeInputs = (pos, tam) => Array.from({length: tam}, (k, v) => (pos==v+1)?1:0)
 
@@ -71,7 +72,7 @@ angular.module('gitHubApp')
     $scope.map = {};
 
     
-    var inputsSize = 12;
+    var inputsSize = 13;
     var families = [
       {
         name: 'family1',
@@ -132,9 +133,14 @@ angular.module('gitHubApp')
         name: 'family12',
         regex: family12,
         input: makeInputs(12, inputsSize)
+      },
+      {
+        name: 'family13',
+        regex: family13,
+        input: makeInputs(13, inputsSize)
       }
     ]
-    console.log('families', families)
+    // console.log('families', families)
     var first = true;
     var hopfield = new Architect.Hopfield(80);
     var trainer = new Trainer(hopfield);
@@ -220,6 +226,7 @@ angular.module('gitHubApp')
     $scope.map[makeInputs(10, inputsSize).join('')] = ["família 10"];
     $scope.map[makeInputs(11, inputsSize).join('')] = ["família 11"];
     $scope.map[makeInputs(12, inputsSize).join('')] = ["família 12"];
+    $scope.map[makeInputs(13, inputsSize).join('')] = ["família 13"];
 
     $scope.map[makeInputs(20, inputsSize).join('')] = ["outros"];
 
@@ -237,6 +244,7 @@ angular.module('gitHubApp')
       makeInputs(10, inputsSize),
       makeInputs(11, inputsSize),
       makeInputs(12, inputsSize),
+      makeInputs(13, inputsSize),
     ];
     var set = [];
   for (var p in learn)
