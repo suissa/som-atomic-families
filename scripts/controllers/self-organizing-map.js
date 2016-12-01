@@ -26,7 +26,18 @@ var atoms = [
   {name: 'Lu', dist: '6s24f145d1'},
   {name: 'Lr', dist: '7s25f146d1'},
   {name: 'Ti', dist: '4s23d2'},
-]
+  {name: 'Zr', dist: '5s24d2'},
+  {name: 'Hf', dist: '6s24f145d2'},
+  {name: 'Rf', dist: '7s25f146d2'},
+  {name: 'V', dist: '4s23d3'},
+  {name: 'Nb', dist: '5s14d4'}, 
+  {name: 'Ta', dist: '6s24f145d3'},
+  {name: 'Db', dist: '7s25f146d3'},
+  {name: 'Cr', dist: '4s13d5'},
+  {name: 'Mo', dist: '5s14d5'},
+  {name: 'W', dist: '6s24f145d4'},
+  {name: 'Sg', dist: '7s25f146d4'},
+  ]
 
 
 var family1 = /([1-9])?[1-9]s1$/
