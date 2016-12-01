@@ -66,7 +66,23 @@ var atoms = [
   {name: 'Ga', dist: '4s23d104p1'},
   {name: 'In', dist: '5s24d105p1'},
   {name: 'Tl', dist: '6s24f145d106p1'},
+  {name: 'C', dist: '2s22p2'},
+  {name: 'Si', dist: '3s23p2'},
+  {name: 'Ge', dist: '4s23d104p2'},
+  {name: 'Sn', dist: '5s24d105p2'},
+  {name: 'Pb', dist: '6s24f145d106p2'},
+  {name: 'N', dist: '2s22p3'},
+  {name: 'P', dist: '3s23p3'},
+  {name: 'As', dist: '4s23d104p3'},
+  {name: 'Sb', dist: '5s24d105p3'},
+  {name: 'Bi', dist: '6s24f145d106p3'},
+  {name: 'O', dist: '2s22p4'},
+  {name: 'S', dist: '3s23p4'},
+  {name: 'Se', dist: '4s23d104p4'},
+  {name: 'Te', dist: '5s24d105p4'},
+  {name: 'Po', dist: '6s24f145d106p4'},
   ]
+
 
 
 var family1 = /([1-9])?[1-9]s1$/
