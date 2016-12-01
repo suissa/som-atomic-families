@@ -21,6 +21,11 @@ var atoms = [
   {name: 'Sr', dist: '7s2'},
   {name: 'Ba', dist: '7s2'},
   {name: 'Ra', dist: '7s2'},
+  {name: 'Sc', dist: '4s23d1'},
+  {name: 'Y', dist: '5s24d1'},
+  {name: 'Lu', dist: '6s24f145d1'},
+  {name: 'Lr', dist: '7s25f146d1'},
+  {name: 'Ti', dist: '4s23d2'},
 ]
 
 
