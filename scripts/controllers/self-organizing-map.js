@@ -110,30 +110,19 @@ angular.module('gitHubApp')
 
     $scope.valid = function(){
       var valid = typeof $scope.word == 'string';
-      // for (var i in $scope.draw)
-      //   for (var j in $scope.draw[i])
-      //     if ($scope.draw[i][j] == $scope.word)
-      //       return false;
       return valid;
     }
     $scope.keyup= function(evt){
-      if (evt.which == 32 || evt.which == 13)
-      {
-        // if ($scope.valid() && $scope.word.length > 0)
-        // {
-          feed($scope.word.trim());
-          $scope.word = "";
-        // }
+      if ((evt.which == 32 || evt.which == 13) && $scope.word.length > 0) {
+        feed($scope.word.trim());
+        $scope.word = "";
       }
     }
 
 
     
     var feed = function(word){
-      console.log('word', word);
-
       var input = makeInputs(20, inputsSize);
-      // var input = ;
 
       var atom = atoms.filter((atom) => atom.name.toLowerCase() === word)
 
