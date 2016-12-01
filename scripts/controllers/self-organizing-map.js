@@ -62,8 +62,11 @@ var family11 = /[1-9]s1+([1-9]f14)?[1-9]d10$|7s25f146d9$/
 var family12 = /[1-9]s2+([1-9]f14)?[1-9]d10$/
 var family13 = /[1-9]s2+([1-9]d10)?[1-9]p1$/
 var family14 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p2$/
-// [1-9]s2([1-9]f[1-9])?([1-9]d10)?[1-9]p2$
-// 6s24f145d106p2
+var family15 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p3$/
+var family16 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p4$/
+var family17 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p5$/
+var family18 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p6$/
+
 const makeInputs = (pos, tam) => Array.from({length: tam}, (k, v) => (pos==v+1)?1:0)
 
 angular.module('gitHubApp')
@@ -74,7 +77,7 @@ angular.module('gitHubApp')
     $scope.map = {};
 
     
-    var inputsSize = 14;
+    var inputsSize = 18;
     var families = [
       {
         name: 'family1',
@@ -145,6 +148,26 @@ angular.module('gitHubApp')
         name: 'family14',
         regex: family14,
         input: makeInputs(14, inputsSize)
+      },
+      {
+        name: 'family15',
+        regex: family15,
+        input: makeInputs(15, inputsSize)
+      },
+      {
+        name: 'family16',
+        regex: family16,
+        input: makeInputs(16, inputsSize)
+      },
+      {
+        name: 'family17',
+        regex: family17,
+        input: makeInputs(17, inputsSize)
+      },
+      {
+        name: 'family18',
+        regex: family18,
+        input: makeInputs(18, inputsSize)
       }
     ]
     // console.log('families', families)
@@ -235,6 +258,10 @@ angular.module('gitHubApp')
     $scope.map[makeInputs(12, inputsSize).join('')] = ["família 12"];
     $scope.map[makeInputs(13, inputsSize).join('')] = ["família 13"];
     $scope.map[makeInputs(14, inputsSize).join('')] = ["família 14"];
+    $scope.map[makeInputs(15, inputsSize).join('')] = ["família 15"];
+    $scope.map[makeInputs(16, inputsSize).join('')] = ["família 16"];
+    $scope.map[makeInputs(17, inputsSize).join('')] = ["família 17"];
+    $scope.map[makeInputs(18, inputsSize).join('')] = ["família 18"];
 
     $scope.map[makeInputs(20, inputsSize).join('')] = ["outros"];
 
@@ -254,6 +281,10 @@ angular.module('gitHubApp')
       makeInputs(12, inputsSize),
       makeInputs(13, inputsSize),
       makeInputs(14, inputsSize),
+      makeInputs(15, inputsSize),
+      makeInputs(16, inputsSize),
+      makeInputs(17, inputsSize),
+      makeInputs(18, inputsSize),
     ];
     var set = [];
   for (var p in learn)
