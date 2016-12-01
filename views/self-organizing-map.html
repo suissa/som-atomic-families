@@ -1,21 +1,23 @@
 <div class="container demo-page">
 	<div class="row">
 		<div class="col-md-12">
-			<h1 class="page-header">Self Organizing Map</h1>
+			<h1 class="page-header">Self Organizing Map - Atom's Families</h1>
 		</div>
 	</div>
 	<div class="row text-center" style="margin-top: 30px;">
 		<div class="col-md-8 col-md-offset-2">
 			<form name="wordForm">
 				<div class="form-group" ng-class="{ 'has-error': !valid() }">
+					<label for="word">Digite o símbolo atômico ou o final da sua distribuição eletrônica:
 		          <input 
 		          	name="word"
 		          	type="text" 
 		          	class="form-control text-lowercase" 
-		          	placeholder="Type a word and press Enter..."
+		          	placeholder="Digite o símbolo atômico ou o final da sua distribuição eletrônica"
 		          	ng-model="word"
 		          	ng-keyup="keyup($event)"
 		          >
+		      </label>
 
 		          	<!-- 
 
