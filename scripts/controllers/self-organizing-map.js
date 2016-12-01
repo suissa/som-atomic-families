@@ -86,7 +86,7 @@ var atoms = [
 
 
 var family1 = /([1-9])?[1-9]s1$/
-var family2 = /([1-9])?[1-9]s2$/
+var family2 = /([1-9])?[2-9]s2$/
 var family3 = /([1-9])?[1-9]d1$/
 var family4 = /([1-9])?[1-9]d2$/
 var family5 = /s14d4$|d3$/
@@ -102,7 +102,7 @@ var family14 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p2$/
 var family15 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p3$/
 var family16 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p4$/
 var family17 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p5$/
-var family18 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p6$/
+var family18 = /^1s2$|^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p6$/
 
 const makeInputs = (pos, tam) => Array.from({length: tam}, (k, v) => (pos==v+1)?1:0)
 
