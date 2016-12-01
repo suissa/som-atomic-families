@@ -81,12 +81,24 @@ var atoms = [
   {name: 'Se', dist: '4s23d104p4'},
   {name: 'Te', dist: '5s24d105p4'},
   {name: 'Po', dist: '6s24f145d106p4'},
+  {name: 'F', dist: '2s22p5'},
+  {name: 'Cl', dist: '3s23p5'},
+  {name: 'Br', dist: '4s23d104p5'},
+  {name: 'I', dist: '5s24d105p5'},
+  {name: 'At', dist: '6s24f145d106p5'},
+  {name: 'He', dist: '1s2'},
+  {name: 'Ne', dist: '2s22p6'},
+  {name: 'Ar', dist: '3s23p6'},
+  {name: 'Kr', dist: '4s23d104p6'},
+  {name: 'Xe', dist: '5s24d105p6'},
+  {name: 'Rn', dist: '6s24f145d106p6'},
+
   ]
 
 
 
 var family1 = /([1-9])?[1-9]s1$/
-var family2 = /([1-9])?[2-9]s2$/
+var family2 = /([1-9])?[1-9]s2$/
 var family3 = /([1-9])?[1-9]d1$/
 var family4 = /([1-9])?[1-9]d2$/
 var family5 = /s14d4$|d3$/
@@ -102,7 +114,7 @@ var family14 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p2$/
 var family15 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p3$/
 var family16 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p4$/
 var family17 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p5$/
-var family18 = /^1s2$|^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p6$/
+var family18 = /^[1-9]s2([1-9]f14)?([1-9]d10)?[1-9]p6$/
 
 const makeInputs = (pos, tam) => Array.from({length: tam}, (k, v) => (pos==v+1)?1:0)
 
