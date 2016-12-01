@@ -133,7 +133,7 @@ angular.module('gitHubApp')
     }
     $scope.keyup= function(evt){
       if ((evt.which == 32 || evt.which == 13) && $scope.word.length > 0) {
-        feed($scope.word.trim());
+        feed($scope.word.toLowerCase().trim());
         $scope.word = "";
       }
     }
@@ -143,7 +143,7 @@ angular.module('gitHubApp')
     var feed = function(word){
       var input = makeInputs(20, inputsSize);
 
-      var atom = atoms.filter((atom) => atom.name.toLowerCase() === word)
+      var atom = atoms.filter((atom) => atom.name.toLowerCase() === word.toLowerCase())
 
       console.log('atom', atom);
       if (atom.length) word = atom[0].dist
