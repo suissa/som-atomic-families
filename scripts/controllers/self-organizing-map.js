@@ -110,10 +110,10 @@ angular.module('gitHubApp')
 
     $scope.valid = function(){
       var valid = typeof $scope.word == 'string';
-      for (var i in $scope.draw)
-        for (var j in $scope.draw[i])
-          if ($scope.draw[i][j] == $scope.word)
-            return false;
+      // for (var i in $scope.draw)
+      //   for (var j in $scope.draw[i])
+      //     if ($scope.draw[i][j] == $scope.word)
+      //       return false;
       return valid;
     }
     $scope.keyup= function(evt){
